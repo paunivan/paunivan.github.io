@@ -1,0 +1,217 @@
+body {
+    background-image: url("http://i284.photobucket.com/albums/ll1/paun1/background.jpg");
+    background-color: #1871f7;
+
+} 
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 60%;
+  left: 20%;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.slika {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 20px solid #065294;
+}
+
+div.prvidiv {
+    font-family: "Copperplate", "Copperplate Gothic Light", "sans-serif";
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 0.08em 0.08em blue;
+    height: 30%;
+    width: 100%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: navy;
+    border-style: solid;
+
+}
+h1 {
+    font-family: "Impact", "Charcoal", "sans-serif";
+    color: lightblue;
+    text-shadow: 0.08em 0.08em blue;
+
+
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1892FD;
+    position: relative;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    font-size: 1.25em;
+    width: 100%;
+
+}
+
+li {
+
+    float: left;
+    margin: auto;
+    width: 14.2857%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #426CF7;
+    color: red;
+}
+
+div.strana {
+    background-color: lightblue;
+    color: purple;
+    margin: 4.7% auto;
+    padding: 2%;
+    width: 60%;
+    text-decoration: none;
+    font-family: "Impact", "Charcoal", "sans-serif";
+    font-size: 1.5em;
+    border: solid 0.1em lightblue;
+    
+    }
+.viber {
+  color: purple;
+}
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+html, body {
+  
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+footer {
+    font-size: 1.5em;
+    color: yellow;
+    text-align: right;
+    text-decoration: none;
+}
